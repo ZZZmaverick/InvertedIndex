@@ -8,7 +8,6 @@
 代码设计
 
 Mapper
-
 Mapper的目的是得到如下形式的结果：
 <<key1, value1>, <key2, value2>, <key3, value3>>
 其中单个<key, value>的内容是：
@@ -17,7 +16,6 @@ Mapper的目的是得到如下形式的结果：
   
 
 停用词设计
-
 停用词文件保存在stop_words中，在main里完成文件的读取和字符串处理转换，并使用config.set()进行传值。在Reducer中，使用config.get()获取停用词，并进行停用词的相关判断，key为停用词时不进行后续reduce操作。相关代码和详细注释见InvertedIndex.java
   
 
